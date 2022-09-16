@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
                 layout.setBackgroundColor(Color.rgb(r, g, b));
                 String colorText = String.format("(%d, %d, %d)",r,g,b);
                 text.setText(colorText);
+                if((r+g+b)> 450)
+                {
+                    text.setTextColor(Color.BLACK);
+                }else{
+                    text.setTextColor(Color.WHITE);
+                }
             }
         });
     }
